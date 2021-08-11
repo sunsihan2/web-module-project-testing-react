@@ -4,8 +4,9 @@ import Loading from './Loading';
 
 const Show = (props) => {
     const { handleSelect, selectedSeason, show } = props;
-    
-    if (!show)
+
+  
+    if (!show) //if show = null print out loading component
       return <Loading />
 
     return(<div data-testid="show-container">
